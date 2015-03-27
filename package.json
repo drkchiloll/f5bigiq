@@ -1,0 +1,33 @@
+{
+  "name": "f5bigiq",
+  "version": "0.0.1",
+  "description": "\"F5 BIG IQ API.\"",
+  "main": "server.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "csvtojson": "^0.3.18",
+    "express": "^4.11.2",
+    "extend": "^2.0.0",
+    "morgan": "^1.5.1",
+    "q": "^1.1.2",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Sam Womack",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
