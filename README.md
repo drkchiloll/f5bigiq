@@ -30,7 +30,7 @@ URL Path: /shared/authn/login POST
 
 A JSON OBJECT must be passed in an Auth Attempt:
 
-```
+```javascript
 //Request Options
 {
   uri 	 : URL,
@@ -46,8 +46,9 @@ A JSON OBJECT must be passed in an Auth Attempt:
   	password : pass
   }
 }
-//In the Case of Using LDAP
+//In the Case of Using LDAP to Authenticate to BigIQ
 //A Login Ref to the LDAP UUID on the BigIQ must be Obtained
+//The Below Object would replace the JSON properties in the REQ (above)
 {
   'username'       : user,
   'password'       : pass,
