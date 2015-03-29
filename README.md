@@ -7,6 +7,7 @@ Example Login to BigIQ 4.5 utilizing its REST API and performing an Echo Test of
 
 #####Running the Python Script
 From the CLI:
+
 ```
 python bigclient.py
 ```
@@ -25,23 +26,32 @@ node bigiq.js
 ```
 
 ######BASIC Authentication
-Initial Login Uses BASIC Authentication In Post Request
-URL Path: /sharedauthn/login
+URL Path: /sharedauthn/login POST
 
 A JSON OBJECT must be passed in an Auth Attempt:
 
-```javascript
-//Standard w/o LDAP Authentication
+```
+//Request Options
 {
-  username : user,
-  password : pass
+  uri 	 : URL,
+  method : POST,
+  //BASIC AUTHORIZATION
+  auth   : {
+  	user : user,
+  	pass : pass
+  },
+  header : header
+  json   : {
+  	username : user,
+  	password : pass
+  }
 }
 //In the Case of Using LDAP
 //A Login Ref to the LDAP UUID on the BigIQ must be Obtained
 {
-  'username'      : user,
-  'password'      : pass,
-  'loginReference : {
+  'username'       : user,
+  'password'       : pass,
+  'loginReference' : {
     'link' : ldap_link
   }
 }
