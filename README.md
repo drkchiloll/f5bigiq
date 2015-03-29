@@ -26,7 +26,7 @@ node bigiq.js
 ```
 
 ######BASIC Authentication
-URL Path: /sharedauthn/login POST
+URL Path: /shared/authn/login POST
 
 A JSON OBJECT must be passed in an Auth Attempt:
 
